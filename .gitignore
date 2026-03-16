@@ -1,0 +1,35 @@
+# Vivado generated files
+*.jou
+*.log
+*.str
+*.xpr
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.srcs/
+.Xil/
+output/
+*.bit
+*.dcp
+*.rpt
+*.pb
+
+# Firmware build artifacts
+firmware/*.elf
+firmware/*.bin
+firmware/*.map
+firmware/*.o
+
+# Generated IMEM init (regenerate with generate_imem.py)
+imem_init.sv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+*.swp
+*~
