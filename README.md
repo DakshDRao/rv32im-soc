@@ -107,6 +107,9 @@ firmware/
   bin2hex.py        Binary → $readmemh hex converter
   generate_imem.py  Generates imem_init.sv with firmware baked in
 ```
+<img width="1892" height="764" alt="Screenshot 2026-03-17 003212" src="https://github.com/user-attachments/assets/fbd52164-ed3e-4e23-ab08-4630b2982309" />
+
+![WhatsApp Image 2026-03-16 at 10 35 11 PM](https://github.com/user-attachments/assets/f3d1f0eb-56bd-49f6-9126-9893caa068c7)
 
 ---
 
@@ -203,13 +206,3 @@ All 10 Phase 2 tests pass in simulation:
 
 ---
 
-## What's Next — Phase 3
-
-Phase 3 will transform this into a **5-stage pipeline** (IF → ID → EX → MEM → WB) with:
-- Pipeline registers between all stages
-- Data hazard detection + stalling
-- EX/MEM and MEM/WB forwarding paths
-- Branch resolution in EX stage
-- Performance counters (IPC measurement)
-
-The SoC infrastructure (bus fabric, peripherals, firmware) will remain unchanged — only `riscv_core.sv` changes.
